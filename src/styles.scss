@@ -3,10 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
+.btn-primary {
     @apply transition duration-300 transform text-white border-none rounded-[40px] bg-green pr-[35px] pl-[35px] pt-3 pb-3;
 
     &:hover {
         @apply translate-y-1 scale-110;
     }
+}
+.sec-pt {
+    @apply pt-[60px];
+}
+.sec-pb {
+    @apply pb-[70px];
+}
+.content-empty::before {
+    content: '';
 }

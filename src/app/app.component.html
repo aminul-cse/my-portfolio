@@ -29,15 +29,15 @@
 
     <!-- ================ Home section =============== -->
     <div class="pl-[270px]">
-      <div class="bg-black py-0 px-[30px]">
-        <div class="pt-[60px] pb-[70px]">
+      <div class="bg-[#151515] py-0 px-[30px]">
+        <div class="sec-pt sec-pb">
         <div class="relative flex flex-wrap ml-[-15px] mr-[-15px]">
           <div class="flex-grow-0 flex-shrink-0 w-[60%] pl-[15px] pr-[15px]">
             <h3 class="text-[28px] text-white font-bold max-w-[40%]">Hello! I'm <span class="text-green font-semibold text-4xl"> Aminul Islam</span></h3>
             <h3 class="text-[30px] mt-4 mb-4 text-white font-bold">I'm a <span #typingElement class="text-green font-bold">Web designer</span></h3>
             <p class="text-white mb-[70px] text-[20px]">Eager learner and enthusiast in the ever-evolving world of web technologies, committed to delivering high-quality
             solutions.</p>
-              <a href="#"><button class="btn">Hire me</button></a>
+              <a href="#"><button class="btn-primary">Hire me</button></a>
           </div>
           <div class="flex-shrink-0 flex-grow-0 w-[40%] relative pl-[15px] pr-[15px] text-center pt-14">
             <div class="before:content-[''] absolute h-[80px] w-[80px] border-t-[10px] border-l-[10px] border-green left-[-10px] top-[-50px] mt-10"></div>
@@ -47,14 +47,241 @@
         </div>
         </div>
         <!-- ================ ABOUT ME =============== -->
-        <div class="pt-[60px] pb-[70px]">
-            <div class="flex flex-wrap relative">
+        <div class="sec-pt sec-pb">
+            <div class="flex flex-wrap relative mb-14">
               <div class="text-white font-bold text-4xl mb-2">About Me</div>
               <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
               <div class="h-1 w-[25px] bg-green top-[100%] absolute left-0"></div>
             </div>
+            <!-- Description -->
+            <div class="flex flex-wrap relative mb-14">
+              <div class="text-white font-bold text-2xl mb-4">I'm Aminul islam and <span class="text-green">Web Desinger</span></div>
+              <div class="text-white leading-6">{{aboutMeText}}</div>
+            </div>
+            <!-- Info & Skills -->
+            <div class="grid grid-cols-3 gap-7">
+              <div class="col-span-2">
+                <div class="grid grid-cols-2 gap-7">
+                  <ul class="text-white">
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Birthday : </strong>
+                      <span>4 December 2003</span>
+                    </li>
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Website : </strong>
+                      <span>www.domain.com</span>
+                    </li>
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Degree : </strong>
+                      <span>BSC in CSE (Running)</span>
+                    </li>
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>City : </strong>
+                      <span>Dhaka</span>
+                    </li>
+                  </ul>
+                  <ul class="text-white">
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Age : </strong>
+                      <span>21</span>
+                    </li>
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Email : </strong>
+                      <span>aminulcse2023&#64;gmail.com</span>
+                    </li>
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Phone : </strong>
+                      <span>01826051709</span>
+                    </li>
+                    <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
+                      <strong>Freelance : </strong>
+                      <span>Available</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-white mt-[40px] flex gap-6">
+                  <button class="btn-primary">Download Cv</button>
+                  <button class="btn-primary">Hire Me</button>
+                </div>
+              </div>
+              <div class="col-span-1">
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">JAVASCRIPT</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[66%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">66%</div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">ANGULAR</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[46%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">46%</div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">TAILWIND CSS</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[88%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">88%</div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">HTML</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[90%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">90%</div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">CSS</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[89%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">89%</div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">C</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[69%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">69%</div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
+                    <h5 class="text-white leading-10 font-semibold text-[16px]">C++</h5>
+                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
+                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[40%]"></div>
+                      <div class="absolute right-0 text-white font-normal top-[-35px]">40%</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
         </div>
         <!-- ================ ./ABOUT ME =============== -->
+
+        <!-- ================ Education & Experience =============== -->
+        <div class="grid grid-cols-2 gap-5 pb-[70px]">
+          <div>
+            <h3 class="pb-[30px] font-bold text-2xl text-white">Education</h3>
+            <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%]">
+              <div class="relative bg-[#222222] pt-[30px] pb-[30px] pl-[15px] pr-[15px] border border-[#393939] rounded-[10px] w-[100%]">
+                <div class="relative pl-[37px] pb-[50px]">
+                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
+                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+                  </div>
+                  <h3 class="mb-[12px] text-white">2018 - 2019</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Secondary School Certificate</h4>
+                  <p class="text-[16px] leading-6 text-white">Pirojpur Govt High School</p>
+                </div>
+                <div class="relative pl-[37px] pb-[50px]">
+                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
+                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+                  </div>
+                  <h3 class="mb-[12px] text-white">2018 - 2019</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Secondary School Certificate</h4>
+                  <p class="text-[16px] leading-6 text-white">Pirojpur Govt High School</p>
+                </div>
+                <div class="relative pl-[37px]">
+                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
+                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+                  </div>
+                  <h3 class="mb-[12px] text-white">2018 - 2019</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Secondary School Certificate</h4>
+                  <p class="text-[16px] text-white">Pirojpur Govt High School</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pb-[30px]">
+            <div class="pb-[30px] font-bold text-2xl text-white">Experience</div>
+            <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%]">
+              <div class="relative bg-[#222222] pt-[30px] pb-[30px] pl-[15px] pr-[15px] border border-[#393939] rounded-[10px] w-[100%]">
+                <div class="relative pl-[37px]">
+                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
+                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+                  </div>
+                  <h3 class="mb-[12px] text-white">2023 October - 2024 February</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Web Development Intern</h4>
+                  <p class="text-[16px] text-white">PulseTech Ltd.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================ ./Education & Experience =============== -->
+
+        <!-- ================ Contact Me =============== -->
+        <div class="sec-pt sec-pb">
+          <div class="flex flex-wrap relative mb-14">
+            <div class="text-white font-bold text-4xl mb-2">Contact Me</div>
+            <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
+            <div class="h-1 w-[25px] bg-green top-[100%] absolute left-0"></div>
+          </div>
+          <h3 class="text-2xl text-green text-center font-bold mb-5">Have You Any Question ?</h3>
+          <h4 class="text-[#ffffff] text-center mb-[60px] text-base font-bold">I'M AT YOUR SERVICES</h4>
+          <div class="flex items-center justify-center mb-10">
+            <div class="grid grid-cols-3 w-5/6">
+              <div>
+                <a href="tel:+8801826051709" class="text-center text-[#ffffff] mb-5">
+                  <div>
+                    <div class="flex items-center justify-center mb-4">
+                      <img src="../assets/img/call-189-svgrepo-com.svg" class="h-10" alt="">
+                    </div>
+                    <h1 class="mb-2 font-bold">Call Me On</h1>
+                    <h1>+88 01826051709</h1>
+                  </div>
+                </a>
+              </div>
+              <a href="#" class="text-center text-[#ffffff] mb-5">
+                <div>
+                  <div class="flex items-center justify-center mb-4">
+                    <img src="../assets/img/location-filled-svgrepo-com.svg" class="h-10" alt="">
+                  </div>
+                  <h1 class="mb-2 font-bold">Call Me On</h1>
+                  <h1>+88 01826051709</h1>
+                </div>
+              </a>
+              <a href="mailto:aminulcse2023@gmail.com" class="text-center text-[#ffffff] mb-5">
+                <div>
+                  <div class="flex items-center justify-center mb-4">
+                    <img src="../assets/img/mail-filled-svgrepo-com.svg" class="h-10" alt="">
+                  </div>
+                  <h1 class="mb-2 font-bold">Email</h1>
+                  <h1>aminulcse2023&#64;gmail.com</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl text-green text-center font-bold mb-5">Let's Chat</h3>
+            <h4 class="text-[#ffffff] text-center mb-[60px] text-base font-bold">I'M VERY RESPONSIVE TO MESSAGES</h4>
+            <div class="flex items-center justify-center">
+              <div class="grid grid-cols-4 w-2/5">
+                  <div class="flex items-center justify-center mb-4">
+                    <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank" class="text-center text-[#ffffff] mb-5">
+                        <img src="../assets/img/facebook-svgrepo-com.svg" class="h-10" alt="">
+                    </a>
+                  </div>
+                  <div class="flex items-center justify-center mb-4">
+                    <a href="https://www.instagram.com/Aminul.islam.412/" target="_blank" class="text-center text-[#ffffff] mb-5">
+                        <img src="../assets/img/instagram-1-svgrepo-com.svg" class="h-12" alt="">
+                    </a>
+                  </div>
+                  <div class="flex items-center justify-center mb-4">
+                    <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank" class="text-center text-[#ffffff] mb-5">
+                        <img src="../assets/img/linkedin-svgrepo-com.svg" class="h-10" alt="">
+                    </a>
+                  </div>
+                  <div class="flex items-center justify-center mb-4">
+                    <a href="https://wa.me/qr/KRF66QMKXYJ5J1" target="_blank" class="text-center text-[#ffffff] mb-5">
+                        <img src="../assets/img/whatsapp-svgrepo-com.svg" class="h-10" alt="">
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================ ./Contact Me =============== -->
       </div>
     </div>
     <!-- ================ ./Home section =============== -->
