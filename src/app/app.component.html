@@ -1,25 +1,24 @@
 <section>
-  <div class="container">
     <!-- =============== Aside ================ -->
-    <div class="w-[270px] fixed left-0 top-0 h-[100%] flex justify-center items-center z-10 bg-gray-800 p-[30px] border-r border-r-gray-700">
+    <div class="hidden w-[270px] fixed left-0 top-0 h-[100%] lg:flex justify-center items-center z-10 bg-[#222222] p-[30px] border-r border-r-gray-700">
       <div>
         <a href="#" class="text-white font-bold text-5xl tracking-wide relative py-4 px-5"><span>A.Islam</span></a>
       <div>
           <ul class="mt-[50px] text-white font-bold p-[30px] text-center">
             <li class="mb-5">
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li class="mb-5">
-              <a href="#">Home</a>
+              <a href="#about">About</a>
             </li>
             <li class="mb-5">
-              <a href="#">Home</a>
+              <a href="#info">Info</a>
             </li>
             <li class="mb-5">
-              <a href="#">Home</a>
-           </li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
             <li class="mb-5">
-              <a href="#">Home</a>
+              <a href="#contact">Contact</a>
            </li>
           </ul>
         </div>
@@ -28,26 +27,26 @@
     <!-- =============== ./Aside ================ -->
 
     <!-- ================ Home section =============== -->
-    <div class="pl-[270px]">
+     <div class="lg:pl-[270px]" id="home">
       <div class="bg-[#151515] py-0 px-[30px]">
         <div class="sec-pt sec-pb">
-        <div class="relative flex flex-wrap ml-[-15px] mr-[-15px]">
-          <div class="flex-grow-0 flex-shrink-0 w-[60%] pl-[15px] pr-[15px]">
-            <h3 class="text-[28px] text-white font-bold max-w-[40%]">Hello! I'm <span class="text-green font-semibold text-4xl"> Aminul Islam</span></h3>
-            <h3 class="text-[30px] mt-4 mb-4 text-white font-bold">I'm a <span #typingElement class="text-green font-bold">Web designer</span></h3>
-            <p class="text-white mb-[70px] text-[20px]">Eager learner and enthusiast in the ever-evolving world of web technologies, committed to delivering high-quality
-            solutions.</p>
-              <a href="#"><button class="btn-primary">Hire me</button></a>
+          <div class="relative flex flex-col lg:flex-row flex-nowrap ml-[-15px] mr-[-15px]">
+            <div class="lg:flex-grow-0 lg:flex-shrink-0 lg:w-[60%] pl-[15px] pr-[15px]">
+              <h3 class="text-[28px] text-white font-bold lg:max-w-[40%]">Hello! I'm <span class="text-green font-semibold text-4xl"> Aminul Islam</span></h3>
+              <h3 class="text-[30px] mt-4 mb-4 text-white font-bold">I'm a <span #typingElement class="text-green font-bold">Web designer</span></h3>
+              <p class="text-white mb-8 lg:mb-[70px] text-[20px]">Eager learner and enthusiast in the ever-evolving world of web technologies, committed to delivering high-quality
+              solutions.</p>
+                <a href="#"><button class="btn-primary mb-20 lg:mb-0">Hire me</button></a>
+            </div>
+            <div class="lg:flex-shrink-0 lg:flex-grow-0 lg:w-[40%] relative pl-[15px] pr-[15px] text-center pt-14">
+              <div class="before:content-[''] absolute h-[80px] w-[80px] border-t-[10px] border-l-[10px] border-green left-[-10px] top-[-40px] lg:top-[-50px] mt-10"></div>
+              <img class="relative w-full md:w-72 md:h-72 lg:w-[250px] lg:h-[250px] m-auto border-black rounded-md" src="../assets/img/IMG20231215122203-01.jpeg" alt="">
+              <div class="after:content-[''] absolute h-[80px] w-[80px] border-b-[10px] border-r-[10px] border-green right-[-10px] bottom-[-50px] lg:bottom-[-5px]"></div>
+            </div>
           </div>
-          <div class="flex-shrink-0 flex-grow-0 w-[40%] relative pl-[15px] pr-[15px] text-center pt-14">
-            <div class="before:content-[''] absolute h-[80px] w-[80px] border-t-[10px] border-l-[10px] border-green left-[-10px] top-[-50px] mt-10"></div>
-            <img class="relative h-[250px] m-auto border-black rounded-md" src="../assets/img/IMG20231215122203-01.jpeg" alt="">
-            <div class="after:content-[''] absolute h-[80px] w-[80px] border-b-[10px] border-r-[10px] border-green right-[-10px] bottom-[-5px]"></div>
-          </div>
-        </div>
         </div>
         <!-- ================ ABOUT ME =============== -->
-        <div class="sec-pt sec-pb">
+        <div class="sec-pt sec-pb" id="about">
             <div class="flex flex-wrap relative mb-14">
               <div class="text-white font-bold text-4xl mb-2">About Me</div>
               <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
@@ -59,9 +58,9 @@
               <div class="text-white leading-6">{{aboutMeText}}</div>
             </div>
             <!-- Info & Skills -->
-            <div class="grid grid-cols-3 gap-7">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
               <div class="col-span-2">
-                <div class="grid grid-cols-2 gap-7">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-7">
                   <ul class="text-white">
                     <li class="border-b-[1px] border-b-[#393939] pt-[10px] pb-[10px]">
                       <strong>Birthday : </strong>
@@ -99,8 +98,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="text-white mt-[40px] flex gap-6">
-                  <button class="btn-primary">Download Cv</button>
+                <div class="text-white mt-[40px] lg:flex md:flex gap-6">
+                  <button class="btn-primary mb-5 md:mb-0 lg:mb-0">Download Cv</button>
                   <button class="btn-primary">Hire Me</button>
                 </div>
               </div>
@@ -160,7 +159,7 @@
         <!-- ================ ./ABOUT ME =============== -->
 
         <!-- ================ Education & Experience =============== -->
-        <div class="grid grid-cols-2 gap-5 pb-[70px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-[70px]" id="info">
           <div>
             <h3 class="pb-[30px] font-bold text-2xl text-white">Education</h3>
             <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%]">
@@ -169,25 +168,25 @@
                   <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
                     <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
                   </div>
-                  <h3 class="mb-[12px] text-white">2018 - 2019</h3>
-                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Secondary School Certificate</h4>
-                  <p class="text-[16px] leading-6 text-white">Pirojpur Govt High School</p>
+                  <h3 class="mb-[12px] text-white">2022 - Present</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">B.SC. IN COMPUTER SCIENCE & ENGINEERING</h4>
+                  <p class="text-[16px] leading-6 text-white">Northern University Bangladesh, Dhaka</p>
                 </div>
                 <div class="relative pl-[37px] pb-[50px]">
                   <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
                     <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
                   </div>
-                  <h3 class="mb-[12px] text-white">2018 - 2019</h3>
-                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Secondary School Certificate</h4>
-                  <p class="text-[16px] leading-6 text-white">Pirojpur Govt High School</p>
+                  <h3 class="mb-[12px] text-white">2019 - 2021</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">HIGHER SECONDARY CERTIFICATE</h4>
+                  <p class="text-[16px] leading-6 text-white">National Ideal College, Dhaka</p>
                 </div>
                 <div class="relative pl-[37px]">
                   <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
                     <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
                   </div>
-                  <h3 class="mb-[12px] text-white">2018 - 2019</h3>
-                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Secondary School Certificate</h4>
-                  <p class="text-[16px] text-white">Pirojpur Govt High School</p>
+                  <h3 class="mb-[12px] text-white">2019</h3>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">SECONDARY SCHOOL CERTIFICATE</h4>
+                  <p class="text-[16px] text-white">Pirojpur Govt High School, Pirojpur</p>
                 </div>
               </div>
             </div>
@@ -201,7 +200,7 @@
                     <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
                   </div>
                   <h3 class="mb-[12px] text-white">2023 October - 2024 February</h3>
-                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">Web Development Intern</h4>
+                  <h4 class="font-bold mb-[15px] text-[18px] capitalize text-white">WEB DEVELOPMENT INTERN</h4>
                   <p class="text-[16px] text-white">PulseTech Ltd.</p>
                 </div>
               </div>
@@ -210,8 +209,87 @@
         </div>
         <!-- ================ ./Education & Experience =============== -->
 
+        <!-- ================ Portfolio =============== -->
+         <div class="sec-pt sec-pb" id="portfolio">
+            <div class="flex flex-wrap relative mb-14">
+              <div class="text-white font-bold text-4xl mb-2">Portfolio</div>
+              <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
+              <div class="h-1 w-[25px] bg-green top-[100%] absolute left-0"></div>
+            </div>
+            <h1 class="mb-10 font-medium text-xl text-white">My Last Project : </h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
+              <div class="relative group overflow-hidden rounded-2xl">
+                <img src="../assets/img/2024-06-26 02 28 14.png" alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-95 rounded-2xl">
+                 <div class="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                    <a href="">
+                      <p class="text-white font-bold mb-4 text-lg">Visit Website</p>
+                      <div class="flex items-center justify-center">
+                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="h-10" alt="">
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-2xl">
+                <img src="../assets/img/2024-06-26 02 28 14.png" alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-95 rounded-2xl">
+                 <div class="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                    <a href="">
+                      <p class="text-white font-bold mb-4 text-lg">Visit Website</p>
+                      <div class="flex items-center justify-center">
+                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="h-10" alt="">
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-2xl">
+                <img src="../assets/img/2024-06-26 02 28 14.png" alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-95 rounded-2xl">
+                 <div class="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                    <a href="">
+                      <p class="text-white font-bold mb-4 text-lg">Visit Website</p>
+                      <div class="flex items-center justify-center">
+                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="h-10" alt="">
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-2xl">
+                <img src="../assets/img/2024-06-26 02 28 14.png" alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-95 rounded-2xl">
+                 <div class="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                    <a href="">
+                      <p class="text-white font-bold mb-4 text-lg">Visit Website</p>
+                      <div class="flex items-center justify-center">
+                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="h-10" alt="">
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-2xl">
+                <img src="../assets/img/2024-06-26 02 28 14.png" alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-95 rounded-2xl">
+                 <div class="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                    <a href="">
+                      <p class="text-white font-bold mb-4 text-lg">Visit Website</p>
+                      <div class="flex items-center justify-center">
+                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="h-10" alt="">
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-2xl">
+                <img src="../assets/img/2024-06-26 02 28 14.png" alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-95 rounded-2xl">
+                 <div class="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                    <a href="">
+                      <p class="text-white font-bold mb-4 text-lg">Visit Website</p>
+                      <div class="flex items-center justify-center">
+                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="h-10" alt="">
+                      </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+         </div>
+        <!-- ================ ./Portfolio =============== -->
+
         <!-- ================ Contact Me =============== -->
-        <div class="sec-pt sec-pb">
+        <div class="sec-pt sec-pb" id="contact">
           <div class="flex flex-wrap relative mb-14">
             <div class="text-white font-bold text-4xl mb-2">Contact Me</div>
             <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
@@ -220,7 +298,7 @@
           <h3 class="text-2xl text-green text-center font-bold mb-5">Have You Any Question ?</h3>
           <h4 class="text-[#ffffff] text-center mb-[60px] text-base font-bold">I'M AT YOUR SERVICES</h4>
           <div class="flex items-center justify-center mb-10">
-            <div class="grid grid-cols-3 w-5/6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-5/6">
               <div>
                 <a href="tel:+8801826051709" class="text-center text-[#ffffff] mb-5">
                   <div>
@@ -237,8 +315,8 @@
                   <div class="flex items-center justify-center mb-4">
                     <img src="../assets/img/location-filled-svgrepo-com.svg" class="h-10" alt="">
                   </div>
-                  <h1 class="mb-2 font-bold">Call Me On</h1>
-                  <h1>+88 01826051709</h1>
+                  <h1 class="mb-2 font-bold">Location</h1>
+                  <h1>Dhaka, Bangladesh</h1>
                 </div>
               </a>
               <a href="mailto:aminulcse2023@gmail.com" class="text-center text-[#ffffff] mb-5">
@@ -256,15 +334,10 @@
             <h3 class="text-2xl text-green text-center font-bold mb-5">Let's Chat</h3>
             <h4 class="text-[#ffffff] text-center mb-[60px] text-base font-bold">I'M VERY RESPONSIVE TO MESSAGES</h4>
             <div class="flex items-center justify-center">
-              <div class="grid grid-cols-4 w-2/5">
+              <div class="grid grid-cols-3 w-4/5 lg:w-2/5">
                   <div class="flex items-center justify-center mb-4">
                     <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank" class="text-center text-[#ffffff] mb-5">
                         <img src="../assets/img/facebook-svgrepo-com.svg" class="h-10" alt="">
-                    </a>
-                  </div>
-                  <div class="flex items-center justify-center mb-4">
-                    <a href="https://www.instagram.com/Aminul.islam.412/" target="_blank" class="text-center text-[#ffffff] mb-5">
-                        <img src="../assets/img/instagram-1-svgrepo-com.svg" class="h-12" alt="">
                     </a>
                   </div>
                   <div class="flex items-center justify-center mb-4">
@@ -285,5 +358,5 @@
       </div>
     </div>
     <!-- ================ ./Home section =============== -->
-  </div>
+
 </section>
