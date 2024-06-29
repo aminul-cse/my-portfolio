@@ -4,10 +4,10 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply transition duration-300 transform text-white border-none rounded-[40px] bg-green pr-[35px] pl-[35px] pt-3 pb-3;
+    @apply transition duration-300 transform text-white border-none rounded-3xl bg-green pr-[35px] pl-[35px] pt-3 pb-3;
 
     &:hover {
-        @apply translate-y-1 scale-110;
+        @apply translate-y-1 scale-95;
     }
 }
 .sec-pt {
@@ -18,4 +18,9 @@
 }
 .content-empty::before {
     content: '';
+}
+.clicker {
+  font-family: "Clicker Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
