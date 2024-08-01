@@ -1,4 +1,5 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, Inject} from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import Typed from 'typed.js';
 
@@ -7,7 +8,7 @@ import Typed from 'typed.js';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('typingElement') typingElement!: ElementRef;
@@ -17,15 +18,25 @@ export class AppComponent implements AfterViewInit {
                 JavaScript, a fundamental language for adding interactivity and dynamic functionality to websites. My educational
                 journey also includes successfully completing C programming, which has enhanced my problem-solving abilities. I'm
                 excited about the endless possibilities in the world of web design and development, and I look forward to further honing
-                my skills and contributing to innovative projects in the future.` 
+                my skills and contributing to innovative projects in the future.`;
 
   ngAfterViewInit(): void {
     const typed = new Typed(this.typingElement.nativeElement, {
-      strings: ["", "Learner", "Student", "Web Designer", "Web Developer"],
+      strings: ['', 'Learner', 'Student', 'Web Designer', 'Web Developer'],
       typeSpeed: 100,
       backSpeed: 60,
-      loop: true
+      loop: true,
     });
   }
+
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  scrollToSection(sectionId: string) {
+    const element = this.document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
+
 
