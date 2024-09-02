@@ -1,12 +1,14 @@
 import { Component, AfterViewInit, ViewChild, ElementRef, Inject} from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import Typed from 'typed.js';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MobileNavComponent, BackToTopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

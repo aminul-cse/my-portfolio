@@ -1,0 +1,74 @@
+<!-- Navbar Component HTML -->
+<div class="lg:hidden flex justify-end pt-3 pb-3">
+  <div>
+    <!-- Nav Icon -->
+    <button
+      class="block lg:hidden text-gray-800"
+      (click)="toggleNavbar()"
+    >
+      <span *ngIf="!navbarOpen" class="text-3xl text-green">☰</span>
+      <span *ngIf="navbarOpen" class="text-3xl text-green">✕</span>
+    </button>
+       
+    <!-- Sliding Navbar for Mobile -->
+    <div class="absolute">
+      <nav
+          class="fixed top-0 left-0 w-60 h-full bg-[#222222] shadow-lg transform transition-transform duration-300 z-50"
+          [ngClass]="{
+            '-translate-x-full': !navbarOpen,
+            'translate-x-0': navbarOpen
+          }"
+        >
+        <div class="pt-6 pl-4">
+          <a href="#" class="text-white font-bold text-2xl tracking-wide relative py-4 px-5">
+            <div class="before:content-[''] absolute h-5 w-5 border-b-[5px] border-l-[5px] border-green bottom-0 left-0"></div>
+              <span class="font-clicker font-thin text-2xl pt-2">A.<span class="font-TimesNewRoman">I</span><span class="font-clicker">sla</span><span class="font-TimesNewRoman">m</span></span>
+            <div class="after:content-[''] absolute h-5 w-5 border-t-[5px] border-r-[5px] border-green top-0 right-0 mt-2"></div>
+          </a>
+        </div>
+        <ul class="mt-14 mb-14 space-y-4 p-4 text-white font-semibold">
+          <li (click)="closeNavbar()">
+            <a (click)="scrollToSection('home')">
+              <div class="flex gap-2 items-start justify-start">
+                <img src="../assets/img/home-svgrepo-com.svg" alt="home icon" class="h-7 w-7">
+                <p>Home</p>
+              </div>
+            </a>
+          </li>
+          <li (click)="closeNavbar()">
+            <a (click)="scrollToSection('about')">
+                <div class="flex gap-2 items-start justify-start">
+                  <img src="../assets/img/user-svgrepo-com.svg" alt="about icon" class="h-7 w-7">
+                  <p>About</p>
+                </div>
+              </a>
+          </li>
+          <li (click)="closeNavbar()">
+            <a (click)="scrollToSection('info')">
+                <div class="flex gap-2 items-start justify-start">
+                  <img src="../assets/img/certify-svgrepo-com.svg" alt="resume icon" class="h-6 w-6">
+                  <p>Resume</p>
+                </div>
+              </a>
+          </li>
+          <li (click)="closeNavbar()">
+            <a (click)="scrollToSection('portfolio')">
+                <div class="flex gap-2 items-start justify-start">
+                  <img src="../assets/img/briefcase-portfolio-svgrepo-com.svg" alt="portfolio icon" class="h-6 w-6">
+                  <p>Portfolio</p>
+                </div>
+              </a>
+          </li>
+          <li (click)="closeNavbar()">
+            <a (click)="scrollToSection('contact')">
+                <div class="flex gap-2 items-start justify-start">
+                  <img src="../assets/img/business-card-of-a-man-with-contact-info-svgrepo-com.svg" alt="contact icon" class="h-6 w-6">
+                  <p>Contact</p>
+                </div>
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

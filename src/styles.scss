@@ -11,7 +11,7 @@
     }
 }
 .sec-pt {
-    @apply pt-[60px];
+    @apply pt-[30px] lg:pt-14;
 }
 .sec-pb {
     @apply pb-[70px];
@@ -23,4 +23,19 @@
   font-family: "Clicker Script", cursive;
   font-weight: 400;
   font-style: normal;
+}
+.skill {
+    @apply flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px];
+    .skill-text {
+        @apply text-white leading-10 font-semibold text-[16px];
+    }
+    .percent-pos {
+        @apply relative bg-[#393939] h-[7px] border-none rounded;
+        .percentage {
+            @apply absolute left-0 top-0 h-[100%] border-none rounded bg-green;
+        }
+        .percent-num {
+            @apply absolute right-0 text-white font-normal top-[-35px];
+        }
+    }
 }
