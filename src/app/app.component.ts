@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import Typed from 'typed.js';
+import { SendEmailComponent } from "./send-email/send-email.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MobileNavComponent, BackToTopComponent],
+  imports: [RouterOutlet, MobileNavComponent, BackToTopComponent, SendEmailComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
