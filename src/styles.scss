@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply transition duration-300 transform text-white border-none rounded-3xl bg-green pr-[35px] pl-[35px] pt-3 pb-3;
+    @apply transition duration-300 transform text-white border-none rounded-3xl bg-green pr-[28px] lg:pr-[35px] pl-[28px] lg:pl-[35px] pt-3 pb-3;
 
     &:hover {
         @apply translate-y-1 scale-95;
