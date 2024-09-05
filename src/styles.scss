@@ -39,3 +39,28 @@
         }
     }
 }
+
+// project section
+
+.project-card {
+    @apply relative w-full h-[160px] lg:h-[252px] overflow-hidden rounded-2xl;
+    .img-wrapper {
+        @apply h-full w-full rounded-2xl;
+        .img {
+            @apply h-full w-full object-cover transition duration-700 ease-in-out transform rounded-2xl;
+        }
+    }
+    .content {
+        @apply absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center transition-all duration-700 ease-in-out transform translate-y-full;
+        .title {
+            @apply text-white font-bold mb-4 text-lg;
+        }
+        .icon-wrapper {
+            @apply flex items-center justify-center;
+            .icon {
+                @apply h-10 w-10;
+            }
+        }
+    }
+    
+}
