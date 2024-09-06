@@ -1,7 +1,7 @@
 <!-- send me a email -->
 <div class="mb-10">
-  <p class="mb-5 text-green font-bold text-2xl text-center">Send Me An Email</p>
-  <p class="text-[#ffffff] text-center mb-[60px] text-base uppercase font-bold">Reach Out for Collaborations and Inquiries</p>
+  <p class="contact-title">Send Me An Email</p>
+  <p class="contact-subtitle uppercase">Reach Out for Collaborations and Inquiries</p>
   
   <!-- Form with the ID 'contact-form' -->
   <form id="contact-form" #contactForm="ngForm" class="max-w-lg mx-auto p-6 rounded-lg">
@@ -9,13 +9,13 @@
     <div class="flex flex-col md:flex-row md:-mx-2 mb-4">
       <!-- Name Input -->
       <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-        <label for="name" class="block text-base text-white mb-4">Name</label>
+        <label for="name" class="send-email-title">Name</label>
         <input
           type="text"
           id="name"
           name="name"  
           placeholder="Your Name"
-          class="block w-full px-4 py-2 text-white bg-[#222222] rounded-md focus:outline-none focus:bg-[#151515] focus:ring-2 focus:ring-green focus:transition-all duration-500 focus:duration-300"
+          class="send-email-placeholder"
           required 
           ngModel
         />
@@ -23,13 +23,13 @@
       
       <!-- Email Input -->
       <div class="w-full md:w-1/2 px-2">
-        <label for="email" class="block text-base text-white mb-4">Email</label>
+        <label for="email" class="send-email-title">Email</label>
         <input
           type="email"
           id="email"
           name="email" 
           placeholder="Your Email"
-          class="block w-full px-4 py-2 text-white bg-[#222222] rounded-md focus:outline-none focus:bg-[#151515] focus:ring-2 focus:ring-green focus:transition-all duration-500 focus:duration-300"
+          class="send-email-placeholder"
           required 
           ngModel
         />
@@ -38,13 +38,13 @@
 
     <!-- Subject Section -->
     <div class="mb-4">
-      <label for="subject" class="block text-base text-white mb-4">Subject</label>
+      <label for="subject" class="send-email-title">Subject</label>
       <input
         type="text"
         id="subject"
         name="subject"  
         placeholder="Subject"
-        class="block w-full px-4 py-2 text-white bg-[#222222] rounded-md focus:outline-none focus:bg-[#151515] focus:ring-2 focus:ring-green focus:transition-all duration-500 focus:duration-300"
+        class="send-email-placeholder"
         required 
         ngModel
       />
@@ -52,13 +52,13 @@
 
     <!-- Message Section -->
     <div class="mb-4">
-      <label for="message" class="block text-base text-white mb-4">Message</label>
+      <label for="message" class="send-email-title">Message</label>
       <textarea
         id="message"
         name="message" 
         rows="5"
         placeholder="Your Message"
-        class="block w-full px-4 py-2 text-white bg-[#222222] rounded-md focus:outline-none focus:bg-[#151515] focus:ring-2 focus:ring-green focus:transition-all duration-500 focus:duration-300"
+        class="send-email-placeholder"
         required
         ngModel
       ></textarea>
@@ -70,7 +70,7 @@
         type="button"
         (click)="sendEmail(contactForm)"
         [disabled]="!contactForm.valid"
-        class="w-full bg-[#222222] hover:bg-green text-green hover:text-white font-semibold py-2 mt-4 px-4 shadow-xl rounded-md transition duration-500"
+        class="send-email-btn"
       >
         Send Message
       </button>

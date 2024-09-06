@@ -3,48 +3,48 @@
     <div class="hidden w-[270px] fixed left-0 top-0 h-[100%] lg:flex justify-center items-center z-10 bg-[#222222] p-[30px] border-r border-r-gray-700">
       <div class="absolute top-12">
         <a href="#" class="text-white font-bold text-5xl tracking-wide relative py-4 px-5">
-          <div class="before:content-[''] absolute h-5 w-5 border-b-[5px] border-l-[5px] border-green bottom-0 left-0"></div>
-          <span class="font-clicker font-thin text-4xl">A.<span class="font-TimesNewRoman">I</span><span class="font-clicker">sla</span><span class="font-TimesNewRoman">m</span></span>
-          <div class="after:content-[''] absolute h-5 w-5 border-t-[5px] border-r-[5px] border-green top-0 right-0 mt-6"></div>
+          <div class="aside-logo-before"></div>
+          <span class="aside-logo-text">A.<span class="font-TimesNewRoman">I</span><span class="font-clicker">sla</span><span class="font-TimesNewRoman">m</span></span>
+          <div class="aside-logo-after"></div>
         </a>
       <div>
           <ul class="mt-[50px] text-white font-bold p-[30px] text-center">
             <li class="mb-8">
               <a (click)="scrollToSection('home')" class="cursor-pointer">
-                <div class="flex gap-2 items-start justify-start">
-                  <img src="../assets/img/home-svgrepo-com.svg" alt="home icon" class="h-7 w-7">
+                <div class="aside-icon">
+                  <img src="../assets/img/home-svgrepo-com.svg" alt="home icon" class="img">
                   <p>Home</p>
                 </div>
               </a>
             </li>
             <li class="mb-8">
               <a (click)="scrollToSection('about')" class="cursor-pointer">
-                <div class="flex gap-2 items-start justify-start">
-                  <img src="../assets/img/user-svgrepo-com.svg" alt="about icon" class="h-7 w-7">
+                <div class="aside-icon">
+                  <img src="../assets/img/user-svgrepo-com.svg" alt="about icon" class="img">
                   <p>About</p>
                 </div>
               </a>
             </li>
             <li class="mb-8">
               <a (click)="scrollToSection('info')" class="cursor-pointer">
-                <div class="flex gap-2 items-start justify-start">
-                  <img src="../assets/img/certify-svgrepo-com.svg" alt="resume icon" class="h-6 w-6">
+                <div class="aside-icon">
+                  <img src="../assets/img/certify-svgrepo-com.svg" alt="resume icon" class="img">
                   <p>Resume</p>
                 </div>
               </a>
             </li>
             <li class="mb-8">
               <a (click)="scrollToSection('portfolio')" class="cursor-pointer">
-                <div class="flex gap-2 items-start justify-start">
-                  <img src="../assets/img/briefcase-portfolio-svgrepo-com.svg" alt="portfolio icon" class="h-6 w-6">
+                <div class="aside-icon">
+                  <img src="../assets/img/briefcase-portfolio-svgrepo-com.svg" alt="portfolio icon" class="img">
                   <p>Portfolio</p>
                 </div>
               </a>
             </li>
             <li class="mb-8">
               <a (click)="scrollToSection('contact')" class="cursor-pointer">
-                <div class="flex gap-2 items-start justify-start">
-                  <img src="../assets/img/business-card-of-a-man-with-contact-info-svgrepo-com.svg" alt="contact icon" class="h-6 w-6">
+                <div class="aside-icon">
+                  <img src="../assets/img/business-card-of-a-man-with-contact-info-svgrepo-com.svg" alt="contact icon" class="img">
                   <p>Contact</p>
                 </div>
               </a>
@@ -84,10 +84,10 @@
                 <div class="lg:block flex items-center justify-center gap-2 mb-10 lg:mb-0">
                   <div>
                     <a href="https://drive.google.com/file/d/1Z5WHLvwUWT6GtHRsj-rJGJl8ph6UJNCY/view?usp=sharing" target="_blank">
-                        <button class="relative flex gap-3 items-center justify-between px-3 lg:px-4 py-[6px] border-2 border-green text-white rounded-3xl font-bold overflow-hidden group">
-                          <p class="relative z-10">Download CV</p>
+                        <button class="download-cv group">
+                          <p class="cv-text">Download CV</p>
                           <img src="../assets/img/download-svgrepo-com.svg" alt="download icon" class="h-7 relative z-10">
-                          <span class="absolute inset-0 bg-green transform -translate-x-full transition-transform duration-700 ease-in-out group-hover:translate-x-0"></span>
+                          <span class="btn-animation group-hover:translate-x-0"></span>
                         </button>
                       </a>
                   </div>
@@ -104,28 +104,28 @@
                       </a>
                 </div>
             </div>
-            <div class="lg:flex-shrink-0 lg:flex-grow-0 lg:w-[40%] relative pl-[15px] pr-[15px] text-center pt-14">
-              <div class="before:content-[''] absolute h-[80px] w-[80px] border-t-[10px] border-l-[10px] border-green left-[-10px] top-[-40px] lg:top-[-50px] mt-10"></div>
-              <img class="relative w-full md:w-72 md:h-72 lg:w-[250px] lg:h-[250px] m-auto border-black rounded-md" src="../assets/img/ForPOrtfolio.png" alt="profile image">
-              <div class="after:content-[''] absolute h-[80px] w-[80px] border-b-[10px] border-r-[10px] border-green right-[-10px] bottom-[-55px] lg:bottom-6 2xl:bottom-[-50px]"></div>
+            <div class="profile">
+              <div class="p-img-decoration-top"></div>
+              <img class="p-img" src="../assets/img/ForPOrtfolio.png" alt="profile image">
+              <div class="p-img-decoration-bottom"></div>
             </div>
           </div>
         </div>
         <app-back-to-top></app-back-to-top>
         <!-- ================ ABOUT ME =============== -->
         <div class="sec-pt sec-pb" id="about">
-            <div class="flex flex-wrap relative mb-14">
-              <div class="text-white font-bold text-4xl mb-2">About Me</div>
-              <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
-              <div class="h-1 w-[25px] bg-green top-[100%] absolute left-0"></div>
+            <div class="heading">
+              <div class="heading-text">About Me</div>
+              <div class="heading-underline-sm"></div>
+              <div class="heading-underline-lg"></div>
             </div>
             <!-- Description -->
             <div class="flex flex-wrap relative mb-14">
-              <div class="text-white font-bold text-2xl mb-4">I'm Aminul islam and <span class="text-green">Web Desinger</span></div>
+              <div class="text-white font-bold text-2xl mb-4">Designing with Code, <span class="text-green">Innovating with Passion</span></div>
               <div class="text-white leading-6">{{aboutMeText}}</div>
             </div>
             <!-- Info & Skills -->
-            <div class="text-center text-white font-medium text-xl mb-8">My skills</div>
+            <div class="resume-title text-center mb-5">My skills</div>
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
               <div>
                 <div class="skill">
@@ -158,41 +158,41 @@
                       <div class="percent-num">90%</div>
                     </div>
                   </div>
-                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
-                    <p class="text-white leading-10 font-semibold text-[16px]">CSS</p>
-                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
-                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[89%]"></div>
-                      <div class="absolute right-0 text-white font-normal top-[-35px]">89%</div>
+                  <div class="skill">
+                    <p class="skill-text">CSS</p>
+                    <div class="percent-pos">
+                      <div class="percentage w-[89%]"></div>
+                      <div class="percent-num">89%</div>
                     </div>
                   </div>
-                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
-                    <p class="text-white leading-10 font-semibold text-[16px]">SCSS</p>
-                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
-                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[68%]"></div>
-                      <div class="absolute right-0 text-white font-normal top-[-35px]">68%</div>
+                  <div class="skill">
+                    <p class="skill-text">SCSS</p>
+                    <div class="percent-pos">
+                      <div class="percentage w-[68%]"></div>
+                      <div class="percent-num">68%</div>
                     </div>
                   </div>
               </div>
               <div>
-                <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
-                    <p class="text-white leading-10 font-semibold text-[16px]">ANGULAR</p>
-                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
-                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[46%]"></div>
-                      <div class="absolute right-0 text-white font-normal top-[-35px]">46%</div>
+                <div class="skill">
+                    <p class="skill-text">ANGULAR</p>
+                    <div class="percent-pos">
+                      <div class="percentage w-[46%]"></div>
+                      <div class="percent-num">46%</div>
                     </div>
                   </div>
-                <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
-                    <p class="text-white leading-10 font-semibold text-[16px]">TAILWIND CSS</p>
-                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
-                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[88%]"></div>
-                      <div class="absolute right-0 text-white font-normal top-[-35px]">88%</div>
+                <div class="skill">
+                    <p class="skill-text">TAILWIND CSS</p>
+                    <div class="percent-pos">
+                      <div class="percentage w-[88%]"></div>
+                      <div class="percent-num">88%</div>
                     </div>
                   </div>
-                  <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px]">
-                    <p class="text-white leading-10 font-semibold text-[16px]">VERSION CONTROL (GIT)</p>
-                    <div class="relative bg-[#393939] h-[7px] border-none rounded">
-                      <div class="absolute left-0 top-0 h-[100%] border-none rounded bg-green w-[55%]"></div>
-                      <div class="absolute right-0 text-white font-normal top-[-35px]">55%</div>
+                  <div class="skill">
+                    <p class="skill-text">VERSION CONTROL (GIT)</p>
+                    <div class="percent-pos">
+                      <div class="percentage w-[55%]"></div>
+                      <div class="percent-num">55%</div>
                     </div>
                   </div>
               </div>
@@ -213,47 +213,47 @@
         <!-- ================ Education & Experience =============== -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-[70px]" id="info">
           <div>
-            <p class="pb-[30px] font-bold text-2xl text-white">Education</p>
-            <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%]">
-              <div class="relative bg-[#222222] pt-[30px] pb-[30px] pl-[15px] pr-[15px] border border-[#393939] rounded-[10px] w-[100%]">
-                <div class="relative pl-[37px] pb-[50px]">
-                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
-                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+            <p class="resume-title">Education</p>
+            <div class="resume-card">
+              <div class="card-position">
+                <div class="card-decoration pb-8">
+                  <div class="decoration-start">
+                    <div class="decoration-end"></div>
                   </div>
-                  <p class="mb-[12px] text-white">2022 - Present</p>
-                  <p class="font-bold mb-[15px] text-[18px] capitalize text-white">B.SC. IN COMPUTER SCIENCE & ENGINEERING</p>
-                  <p class="text-[16px] leading-6 text-white">Northern University Bangladesh, Dhaka</p>
+                  <p class="resume-info-date">2022 - Present</p>
+                  <p class="info-title">B.SC. IN COMPUTER SCIENCE & ENGINEERING</p>
+                  <p class="info-subtitle">Northern University Bangladesh, Dhaka</p>
                 </div>
-                <div class="relative pl-[37px] pb-[50px]">
-                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
-                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+                <div class="card-decoration pb-8">
+                  <div class="decoration-start">
+                    <div class="decoration-end"></div>
                   </div>
-                  <p class="mb-[12px] text-white">2019 - 2021</p>
-                  <p class="font-bold mb-[15px] text-[18px] capitalize text-white">HIGHER SECONDARY CERTIFICATE</p>
-                  <p class="text-[16px] leading-6 text-white">National Ideal College, Dhaka</p>
+                  <p class="resume-info-date">2019 - 2021</p>
+                  <p class="info-title">HIGHER SECONDARY CERTIFICATE</p>
+                  <p class="info-subtitle">National Ideal College, Dhaka</p>
                 </div>
-                <div class="relative pl-[37px]">
-                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
-                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+                <div class="card-decoration">
+                  <div class="decoration-start">
+                    <div class="decoration-end"></div>
                   </div>
-                  <p class="mb-[12px] text-white">2019</p>
-                  <p class="font-bold mb-[15px] text-[18px] capitalize text-white">SECONDARY SCHOOL CERTIFICATE</p>
-                  <p class="text-[16px] text-white">Pirojpur Govt High School, Pirojpur</p>
+                  <p class="resume-info-date">2019</p>
+                  <p class="info-title">SECONDARY SCHOOL CERTIFICATE</p>
+                  <p class="info-subtitle">Pirojpur Govt High School, Pirojpur</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="pb-[30px]">
-            <div class="pb-[30px] font-bold text-2xl text-white">Experience</div>
-            <div class="flex-grow-0 flex-shrink-0 basis-[100%] w-[100%]">
-              <div class="relative bg-[#222222] pt-[30px] pb-[30px] pl-[15px] pr-[15px] border border-[#393939] rounded-[10px] w-[100%]">
-                <div class="relative pl-[37px]">
-                  <div class="absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px]">
-                    <div class="absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green"></div>
+            <div class="resume-title">Experience</div>
+            <div class="resume-card">
+              <div class="card-position">
+                <div class="card-decoration">
+                  <div class="decoration-start">
+                    <div class="decoration-end"></div>
                   </div>
-                  <p class="mb-[12px] text-white">2023 October - 2024 February</p>
-                  <p class="font-bold mb-[15px] text-[18px] capitalize text-white">WEB DEVELOPMENT INTERN</p>
-                  <p class="text-[16px] text-white">PulseTech Ltd.</p>
+                  <p class="resume-info-date">2023 October - 2024 February</p>
+                  <p class="info-title">WEB DEVELOPMENT INTERN</p>
+                  <p class="info-subtitle">PulseTech Ltd.</p>
                 </div>
               </div>
             </div>
@@ -263,10 +263,10 @@
 
         <!-- ================ Portfolio =============== -->
          <div class="sec-pt sec-pb" id="portfolio">
-            <div class="flex flex-wrap relative mb-14">
-              <div class="text-white font-bold text-4xl mb-2">Portfolio</div>
-              <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
-              <div class="h-1 w-[25px] bg-green top-[100%] absolute left-0"></div>
+            <div class="heading">
+              <div class="heading-text">Portfolio</div>
+              <div class="heading-underline-sm"></div>
+              <div class="heading-underline-lg"></div>
             </div>
             <p class="mb-10 font-medium text-xl text-white">My Last Project : </p>
             <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-10">
@@ -342,41 +342,41 @@
 
         <!-- ================ Contact Me =============== -->
         <div class="sec-pt sec-pb" id="contact">
-          <div class="flex flex-wrap relative mb-14">
-            <div class="text-white font-bold text-4xl mb-2">Contact Me</div>
-            <div class="mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0"></div>
-            <div class="h-1 w-[25px] bg-green top-[100%] absolute left-0"></div>
+          <div class="heading">
+            <div class="heading-text">Contact Me</div>
+            <div class="heading-underline-sm"></div>
+            <div class="heading-underline-lg"></div>
           </div>
-          <p class="text-2xl text-green text-center font-bold mb-5">Have You Any Question ?</p>
-          <p class="text-[#ffffff] text-center mb-[60px] text-base font-bold">I'M AT YOUR SERVICES</p>
+          <p class="contact-title">Have You Any Question ?</p>
+          <p class="contact-subtitle">I'M AT YOUR SERVICES</p>
           <div class="flex items-center justify-center mb-10">
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-5/6">
               <div>
-                <a href="tel:+8801826051709" class="text-center text-[#ffffff] mb-5">
+                <a href="tel:+8801826051709" class="contact">
                   <div>
-                    <div class="flex items-center justify-center mb-4">
-                      <img src="../assets/img/call-189-svgrepo-com.svg" class="h-10 w-10" alt="call icon">
+                    <div class="contact-icon">
+                      <img src="../assets/img/call-189-svgrepo-com.svg" class="icon-svg" alt="call icon">
                     </div>
-                    <p class="mb-2 font-bold">Call Me On</p>
-                    <p class="mb-12 lg:mb-0">+88 01826051709</p>
+                    <p class="icon-title">Call Me On</p>
+                    <p class="icon-content">+88 01826051709</p>
                   </div>
                 </a>
               </div>
-              <a href="#" class="text-center text-[#ffffff] mb-5">
+              <a href="#" class="contact">
                 <div>
-                  <div class="flex items-center justify-center mb-4">
-                    <img src="../assets/img/location-filled-svgrepo-com.svg" class="h-10 w-10" alt="location icon">
+                  <div class="contact-icon">
+                    <img src="../assets/img/location-filled-svgrepo-com.svg" class="icon-svg" alt="location icon">
                   </div>
-                  <p class="mb-2 font-bold">Location</p>
-                  <p class="mb-12 lg:mb-0">Dhaka, Bangladesh</p>
+                  <p class="icon-title">Location</p>
+                  <p class="icon-content">Dhaka, Bangladesh</p>
                 </div>
               </a>
-              <a href="mailto:aminulcse2023@gmail.com" class="text-center text-[#ffffff] mb-5">
+              <a href="mailto:aminulcse2023@gmail.com" class="contact">
                 <div>
-                  <div class="flex items-center justify-center mb-4">
-                    <img src="../assets/img/mail-filled-svgrepo-com.svg" class="h-10 w-10" alt="mail icon">
+                  <div class="contact-icon">
+                    <img src="../assets/img/mail-filled-svgrepo-com.svg" class="icon-svg" alt="mail icon">
                   </div>
-                  <p class="mb-2 font-bold">Email</p>
+                  <p class="icon-title">Email</p>
                   <p>aminulcse2023&#64;gmail.com</p>
                 </div>
               </a>
@@ -384,28 +384,28 @@
           </div>
           <app-send-email></app-send-email>
           <div>
-            <p class="text-2xl text-green text-center font-bold mb-5">Let's Chat</p>
-            <p class="text-[#ffffff] text-center mb-[60px] text-base font-bold">I'M VERY RESPONSIVE TO MESSAGES</p>
+            <p class="contact-title">Let's Chat</p>
+            <p class="contact-subtitle">I'M VERY RESPONSIVE TO MESSAGES</p>
             <div class="flex items-center justify-center">
               <div class="grid grid-cols-4 w-4/5 md:w-2/6 lg:w-2/6">
-                  <div class="flex items-center justify-center">
+                  <div class="social-media">
                     <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank">
                         <img src="../assets/img/facebook-color-svgrepo-com.svg" class="h-8" alt="facebook icon">
                     </a>
                   </div>
-                  <div class="flex items-center justify-center">
+                  <div class="social-media">
                     <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
                         <img src="../assets/img/linkedin-svgrepo-com.svg" class="h-8" alt="linkedin icon">
                     </a>
                   </div>
-                  <div class="flex items-center justify-center">
+                  <div class="social-media">
                     <a href="https://github.com/aminul-cse" target="_blank">
-                      <img src="../assets/img/github-svgrepo-com.svg" class="h-10 w-10" alt="github icon">
+                      <img src="../assets/img/github-svgrepo-com.svg" class="svg" alt="github icon">
                     </a>
                   </div>
-                  <div class="flex items-center justify-center">
+                  <div class="social-media">
                     <a href="https://wa.me/qr/KRF66QMKXYJ5J1" target="_blank">
-                        <img src="../assets/img/whatsapp-svgrepo-com.svg" class="h-8 w-8" alt="whatsapp icon">
+                        <img src="../assets/img/whatsapp-svgrepo-com.svg" class="svg" alt="whatsapp icon">
                     </a>
                   </div>
               </div>

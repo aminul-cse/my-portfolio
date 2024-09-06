@@ -1,4 +1,6 @@
-import { Component, AfterViewInit, ViewChild, ElementRef, Inject} from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, Inject,} from '@angular/core';
+import { Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { DOCUMENT } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
@@ -9,7 +11,7 @@ import { SendEmailComponent } from "./send-email/send-email.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MobileNavComponent, BackToTopComponent, SendEmailComponent],
+  imports: [RouterOutlet, MobileNavComponent, BackToTopComponent, SendEmailComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -41,5 +43,6 @@ export class AppComponent implements AfterViewInit {
     }
   }
 }
+
 
 

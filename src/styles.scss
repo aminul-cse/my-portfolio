@@ -3,13 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
+//button
+
 .btn-primary {
-    @apply transition duration-300 transform text-white border-none rounded-3xl bg-green pr-[28px] lg:pr-[35px] pl-[28px] lg:pl-[35px] pt-3 pb-3;
+    @apply transition duration-300 transform text-white border-none rounded-3xl bg-green px-5 lg:px-8 py-[10px] font-bold shadow-md shadow-green;
 
     &:hover {
-        @apply translate-y-1 scale-95;
+        @apply translate-y-1 scale-95 shadow-sm shadow-green;
     }
 }
+
+// back to top button
+
+.back-to-top-btn {
+    @apply fixed z-50 bottom-6 right-6 cursor-pointer text-green bg-[#151515] text-xl lg:text-3xl font-bold pt-2 pb-2 pr-3 pl-3 rounded-full shadow-sm shadow-green;
+
+    &:hover {
+        @apply shadow-md shadow-green;
+    }
+}
+
+//section padding
+
 .sec-pt {
     @apply pt-[30px] lg:pt-14;
 }
@@ -19,23 +34,131 @@
 .content-empty::before {
     content: '';
 }
+
+//custom font 
 .clicker {
   font-family: "Clicker Script", cursive;
   font-weight: 400;
   font-style: normal;
 }
+
+//Aside section
+
+//... aside logo
+.aside-logo-before {
+    @apply before:content-[''] absolute h-5 w-5 border-b-[5px] border-l-[5px] border-green bottom-0 left-0;
+}
+.aside-logo-text {
+    @apply font-clicker font-thin text-4xl;
+}
+.aside-logo-after {
+    @apply after:content-[''] absolute h-5 w-5 border-t-[5px] border-r-[5px] border-green top-0 right-0 mt-6;
+}
+
+//...aside icon
+.aside-icon {
+    @apply flex gap-2 items-start justify-start;
+    .img {
+        @apply h-7 w-7;
+    }
+}
+
+//...mobile nav logo 
+.m-nav-logo-before {
+    @apply before:content-[''] absolute h-5 w-5 border-b-[5px] border-l-[5px] border-green bottom-0 left-0;
+}
+.m-logo-text {
+    @apply font-clicker font-thin text-2xl pt-2;
+}
+.m-nav-logo-after {
+    @apply after:content-[''] absolute h-5 w-5 border-t-[5px] border-r-[5px] border-green top-0 right-0 mt-2;
+}
+// Home section
+
+//...profile photo 
+.profile {
+    @apply lg:flex-shrink-0 lg:flex-grow-0 lg:w-[40%] relative pl-[15px] pr-[15px] text-center pt-14;
+    .p-img-decoration-top {
+        @apply before:content-[''] absolute h-[80px] w-[80px] border-t-[10px] border-l-[10px] border-green left-[-10px] top-[-40px] lg:top-[-50px] mt-10;
+    }
+    .p-img {
+        @apply relative w-full md:w-72 md:h-72 lg:w-[250px] lg:h-[250px] m-auto border-black rounded-md;
+    }
+    .p-img-decoration-bottom {
+        @apply after:content-[''] absolute h-[80px] w-[80px] border-b-[10px] border-r-[10px] border-green right-[-10px] bottom-[-55px] lg:bottom-6 2xl:bottom-[-50px];
+    }
+}
+
+//... home download cv button
+.download-cv {
+    @apply relative flex gap-3 items-center justify-between px-3 py-[5px] border-2 border-green text-white rounded-3xl font-bold overflow-hidden shadow-sm shadow-green;
+    .cv-text {
+        @apply relative z-10 font-bold;
+    }
+    .btn-animation {
+        @apply absolute inset-0 bg-green transform -translate-x-full transition-transform duration-700 ease-in-out;
+    }
+}
+
+// Heading
+
+.heading {
+    @apply flex flex-wrap relative mb-14;
+    .heading-text {
+        @apply text-white font-bold text-4xl mb-2;
+    }
+    .heading-underline-sm {
+        @apply mt-2 h-1 w-[50px] bg-green absolute top-[100%] left-0;
+    }
+    .heading-underline-lg {
+        @apply h-1 w-[25px] bg-green top-[100%] absolute left-0;
+    }
+}
+
+// about me
+
+// ...skill section
 .skill {
     @apply flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px];
     .skill-text {
         @apply text-white leading-10 font-semibold text-[16px];
     }
     .percent-pos {
-        @apply relative bg-[#393939] h-[7px] border-none rounded;
+        @apply relative bg-[#393939] shadow-sm shadow-[#393939] h-[7px] border-none rounded;
         .percentage {
-            @apply absolute left-0 top-0 h-[100%] border-none rounded bg-green;
+            @apply absolute left-0 top-0 h-[100%] border-none rounded bg-green shadow-sm shadow-green;
         }
         .percent-num {
             @apply absolute right-0 text-white font-normal top-[-35px];
+        }
+    }
+}
+
+// ...education & experience
+.resume-title {
+    @apply pb-[30px] font-bold text-2xl text-white;
+}
+.resume-card {
+    @apply flex-grow-0 flex-shrink-0 basis-[100%] w-[100%];
+    .card-position {
+        @apply relative bg-[#222222] pt-[30px] pb-[30px] pl-[15px] pr-[15px] border border-[#393939] rounded-[10px] w-[100%];
+        .card-decoration {
+            @apply relative pl-[37px];
+            .decoration-start {
+                @apply absolute h-[100%] left-[7px] top-0 bg-green content-empty w-[1px];
+                .decoration-end {
+                    @apply absolute left-[-7px] top-0 h-[15px] w-[15px] border rounded-[50%] bg-green;
+                }
+            }
+            .resume-info-date {
+                @apply mb-[12px] text-white;
+            }
+            .info-title {
+                @apply font-bold mb-[15px] text-[18px] capitalize text-white;
+            }
+            .info-subtitle {
+                @apply text-[16px] leading-6 text-white;
+            }
         }
     }
 }
@@ -63,4 +186,47 @@
         }
     }
     
+}
+
+// Contact section
+
+// ....contact title
+.contact-title {
+    @apply text-2xl text-green text-center font-bold mb-5;
+}
+.contact-subtitle {
+    @apply text-[#ffffff] text-center mb-[60px] text-base font-bold;
+}
+
+.contact {
+    @apply text-center text-[#ffffff] mb-5;
+    .contact-icon {
+        @apply flex items-center justify-center mb-4;
+        .icon-svg {
+            @apply h-10 w-10;
+        }
+    }
+    .icon-title {
+        @apply mb-2 font-bold;
+    }
+    .icon-content {
+        @apply mb-12 lg:mb-0;
+    }
+}
+
+.send-email-title {
+    @apply block text-base text-white mb-4;
+}
+.send-email-placeholder {
+    @apply block w-full px-4 py-2 text-white bg-[#222222] rounded-md focus:outline-none focus:bg-[#151515] focus:ring-2 focus:ring-green focus:transition-all duration-500 focus:duration-300;
+}
+.send-email-btn {
+    @apply w-full bg-[#222222] hover:bg-green text-green hover:text-white font-semibold py-2 mt-4 px-4 shadow-xl rounded-md transition duration-500;
+}
+
+.social-media {
+    @apply flex items-center justify-center;
+    .svg {
+        @apply h-10 w-10;
+    }
 }
