@@ -11,25 +11,27 @@ import { SendEmailComponent } from "./send-email/send-email.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MobileNavComponent, BackToTopComponent, SendEmailComponent, CommonModule],
+  imports: [
+    RouterOutlet,
+    MobileNavComponent,
+    BackToTopComponent,
+    SendEmailComponent,
+    CommonModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('typingElement') typingElement!: ElementRef;
-  aboutMeText = `My passion lies in web design, and I've already achieved proficiency in several key technologies. I'm well-versed in
-                HTML and CSS, allowing me to create visually appealing and responsive web pages. Additionally, I have a solid foundation
-                in Tailwind CSS, which streamlines the styling process. Currently, I'm expanding my skill set by delving into
-                JavaScript, a fundamental language for adding interactivity and dynamic functionality to websites. My educational
-                journey also includes successfully completing C programming, which has enhanced my problem-solving abilities. I'm
-                excited about the endless possibilities in the world of web design and development, and I look forward to further honing
-                my skills and contributing to innovative projects in the future.`;
+  aboutMeText = `I am a seasoned Frontend Developer with extensive experience in building and optimizing responsive, user-focused web applications. My expertise spans HTML, CSS, SCSS, Tailwind CSS, and JavaScript, enabling me to create visually appealing and functional websites that deliver seamless user experiences.
+In addition to frontend development, I have deep expertise in Shopify development, with proficiency in Liquid template language for building and customizing Shopify themes tailored to meet e-commerce needs. My familiarity with Angular enhances my ability to develop dynamic and scalable web solutions, ensuring smooth integration between frontend and backend systems.
+Dedicated to delivering high-quality, innovative solutions, I stay up-to-date with emerging trends and technologies, consistently enhancing performance and user experience across all digital platforms.`;
 
   ngAfterViewInit(): void {
     const typed = new Typed(this.typingElement.nativeElement, {
-      strings: ['', 'Learner', 'Student', 'Web Designer', 'Web Developer'],
-      typeSpeed: 100,
-      backSpeed: 60,
+      strings: ['', 'Shopify Developer', 'Web Designer', 'Frontend Developer'],
+      typeSpeed: 30,
+      backSpeed: 40,
       loop: true,
     });
   }
@@ -39,7 +41,21 @@ export class AppComponent implements AfterViewInit {
   scrollToSection(sectionId: string) {
     const element = this.document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const target = element.offsetTop;
+      const duration = 300;
+      const start = window.scrollY;
+      const startTime = performance.now();
+
+      const scroll = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 2);
+        window.scrollTo(0, start + (target - start) * ease);
+
+        if (elapsed < duration) requestAnimationFrame(scroll);
+      };
+
+      requestAnimationFrame(scroll);
     }
   }
 }

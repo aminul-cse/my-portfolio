@@ -82,7 +82,7 @@
         @apply before:content-[''] absolute h-[80px] w-[80px] border-t-[10px] border-l-[10px] border-green left-[-10px] top-[-40px] lg:top-[-50px] mt-10;
     }
     .p-img {
-        @apply relative w-full md:w-72 md:h-72 lg:w-[250px] lg:h-[250px] m-auto border-black rounded-md;
+        @apply relative w-full md:w-72 md:h-72 lg:w-[250px] lg:h-[270px] m-auto border-black rounded-md;
     }
     .p-img-decoration-bottom {
         @apply after:content-[''] absolute h-[80px] w-[80px] border-b-[10px] border-r-[10px] border-green right-[-10px] bottom-[-55px] lg:bottom-6 2xl:bottom-[-50px];
@@ -118,21 +118,17 @@
 // about me
 
 // ...skill section
-.skill {
-    @apply flex-grow-0 flex-shrink-0 basis-[100%] w-[100%] mb-[25px];
-    .skill-text {
-        @apply text-white leading-10 font-semibold text-[16px];
-    }
-    .percent-pos {
-        @apply relative bg-[#393939] shadow-sm shadow-[#393939] h-[7px] border-none rounded;
-        .percentage {
-            @apply absolute left-0 top-0 h-[100%] border-none rounded bg-green shadow-sm shadow-green;
+
+.skill-card {
+        @apply w-full bg-[#151515] transition duration-300 ease-in-out hover:bg-[#101010] shadow-black shadow-2xl border-none rounded-md;
+        .skill-img-pos {
+            @apply flex items-center justify-center p-8;
         }
-        .percent-num {
-            @apply absolute right-0 text-white font-normal top-[-35px];
+        .skill-title {
+            @apply text-center text-gray-200 font-medium text-xl pb-3 transition duration-300 ease-in-out hover:text-[#37b182];
         }
     }
-}
+
 
 // ...education & experience
 .resume-title {

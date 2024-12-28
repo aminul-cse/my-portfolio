@@ -1,420 +1,445 @@
 <section>
-    <!-- =============== Aside ================ -->
-    <div class="hidden w-[270px] fixed left-0 top-0 h-[100%] lg:flex justify-center items-center z-10 bg-[#222222] p-[30px] border-r border-r-gray-700">
-      <div class="absolute top-12">
-        <a href="#" class="text-white font-bold text-5xl tracking-wide relative py-4 px-5">
-          <div class="aside-logo-before"></div>
-          <span class="aside-logo-text">A.<span class="font-TimesNewRoman">I</span><span class="font-clicker">sla</span><span class="font-TimesNewRoman">m</span></span>
-          <div class="aside-logo-after"></div>
-        </a>
+  <!-- =============== Aside ================ -->
+  <div
+    class="hidden w-[270px] fixed left-0 top-0 h-[100%] lg:flex justify-center items-center z-10 bg-[#222222] p-[30px] border-r border-r-gray-700">
+    <div class="absolute top-12">
+      <a href="#" class="text-white font-bold text-5xl tracking-wide relative py-4 px-5">
+        <div class="aside-logo-before"></div>
+        <span class="aside-logo-text">A.<span class="font-TimesNewRoman">I</span><span
+            class="font-clicker">sla</span><span class="font-TimesNewRoman">m</span></span>
+        <div class="aside-logo-after"></div>
+      </a>
       <div>
-          <ul class="mt-[50px] text-white font-bold p-[30px] text-center">
-            <li class="mb-8">
-              <a (click)="scrollToSection('home')" class="cursor-pointer">
-                <div class="aside-icon">
-                  <img src="../assets/img/home-svgrepo-com.svg" alt="home icon" class="img">
-                  <p>Home</p>
-                </div>
-              </a>
-            </li>
-            <li class="mb-8">
-              <a (click)="scrollToSection('about')" class="cursor-pointer">
-                <div class="aside-icon">
-                  <img src="../assets/img/user-svgrepo-com.svg" alt="about icon" class="img">
-                  <p>About</p>
-                </div>
-              </a>
-            </li>
-            <li class="mb-8">
-              <a (click)="scrollToSection('info')" class="cursor-pointer">
-                <div class="aside-icon">
-                  <img src="../assets/img/certify-svgrepo-com.svg" alt="resume icon" class="img">
-                  <p>Resume</p>
-                </div>
-              </a>
-            </li>
-            <li class="mb-8">
-              <a (click)="scrollToSection('portfolio')" class="cursor-pointer">
-                <div class="aside-icon">
-                  <img src="../assets/img/briefcase-portfolio-svgrepo-com.svg" alt="portfolio icon" class="img">
-                  <p>Portfolio</p>
-                </div>
-              </a>
-            </li>
-            <li class="mb-8">
-              <a (click)="scrollToSection('contact')" class="cursor-pointer">
-                <div class="aside-icon">
-                  <img src="../assets/img/business-card-of-a-man-with-contact-info-svgrepo-com.svg" alt="contact icon" class="img">
-                  <p>Contact</p>
-                </div>
-              </a>
-           </li>
-          </ul>
-        </div>
+        <ul class="mt-[50px] text-white font-bold p-[30px] text-center">
+          <li class="mb-8">
+            <a (click)="scrollToSection('home')" class="cursor-pointer">
+              <div class="aside-icon">
+                <img src="../assets/img/home-svgrepo-com.svg" alt="home icon" class="img">
+                <p>HOME</p>
+              </div>
+            </a>
+          </li>
+          <li class="mb-8">
+            <a (click)="scrollToSection('about')" class="cursor-pointer">
+              <div class="aside-icon">
+                <img src="../assets/img/user-svgrepo-com.svg" alt="about icon" class="img">
+                <p>RESUME</p>
+              </div>
+            </a>
+          </li>
+          <li class="mb-8">
+            <a (click)="scrollToSection('skill')" class="cursor-pointer">
+              <div class="aside-icon">
+                <img src="../assets/img/certify-svgrepo-com.svg" alt="resume icon" class="img">
+                <p>SKILLS</p>
+              </div>
+            </a>
+          </li>
+          <li class="mb-8">
+            <a (click)="scrollToSection('portfolio')" class="cursor-pointer">
+              <div class="aside-icon">
+                <img src="../assets/img/briefcase-portfolio-svgrepo-com.svg" alt="portfolio icon" class="h-6 w-6">
+                <p>PORTFOLIO</p>
+              </div>
+            </a>
+          </li>
+          <li class="mb-8">
+            <a (click)="scrollToSection('contact')" class="cursor-pointer">
+              <div class="aside-icon">
+                <img src="../assets/img/business-card-of-a-man-with-contact-info-svgrepo-com.svg" alt="contact icon"
+                  class="img">
+                <p>CONTACT</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- =============== ./Aside ================ -->
+  </div>
+  <!-- =============== ./Aside ================ -->
 
-    <!-- ================ Home section =============== -->
-     <div class="lg:pl-[270px]" id="home">
-      <div class="bg-[#151515] py-0 px-[30px]">
-        <app-mobile-nav></app-mobile-nav>
-        <div class="sec-pt sec-pb">
-          <div class="relative flex flex-col lg:flex-row flex-nowrap ml-[-15px] mr-[-15px]">
-            <div class="lg:flex-grow-0 lg:flex-shrink-0 lg:w-[60%] pl-[15px] pr-[15px]">
-              <p class="text-[28px] text-white font-bold lg:max-w-[45%]">Hello! I'm <span class="text-green font-semibold text-4xl"> Aminul Islam</span></p>
-              <p class="text-[30px] mt-4 mb-4 text-white font-bold">I'm a <span #typingElement class="text-green font-bold">Web designer</span></p>
-              <p class="text-white mb-8 text-[20px]">Eager learner and enthusiast in the ever-evolving world of web technologies, committed to delivering high-quality
+  <!-- ================ Home section =============== -->
+  <div class="lg:pl-[270px]" id="home">
+    <div class="bg-[#151515] py-0 px-[30px]">
+      <app-mobile-nav></app-mobile-nav>
+      <div class="sec-pt sec-pb">
+        <div class="relative flex flex-col lg:flex-row flex-nowrap ml-[-15px] mr-[-15px]">
+          <div class="lg:flex-grow-0 lg:flex-shrink-0 lg:w-[60%] pl-[15px] pr-[15px]">
+            <p class="text-[28px] text-white font-bold lg:max-w-[45%]">Hello! I'm <span
+                class="text-green font-semibold text-4xl"> Aminul Islam</span></p>
+            <p class="text-[30px] mt-4 mb-4 text-white font-bold">I'm a <span #typingElement
+                class="text-green font-bold">Web designer</span></p>
+            <p class="text-white mb-8 text-[20px]">Eager learner and enthusiast in the ever-evolving world of web
+              technologies, committed to delivering high-quality
               solutions.</p>
-              <div class="lg:flex gap-5">
-                <div class="flex gap-5 mb-10 lg:mb-0">
-                    <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank">
-                      <img src="../assets/img/facebook-color-svgrepo-com.svg" class="h-9" alt="facebook icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
-                      <img src="../assets/img/linkedin-svgrepo-com.svg" class="h-9" alt="linkedin icon">
-                    </a>
-                    <a href="https://wa.me/qr/KRF66QMKXYJ5J1" target="_blank">
-                      <img src="../assets/img/whatsapp-svgrepo-com.svg" class="h-9" alt="whatsapp icon">
-                    </a>
-                    <a href="https://github.com/aminul-cse" target="_blank">
-                      <img src="../assets/img/github-svgrepo-com.svg" class="h-10" alt="github icon">
-                    </a>
-                </div>
-                <div class="lg:block flex items-center justify-center gap-6 mb-10 lg:mb-0">
-                  <div>
-                    <a href="https://drive.google.com/file/d/1Z5WHLvwUWT6GtHRsj-rJGJl8ph6UJNCY/view?usp=sharing" target="_blank">
-                        <button class="download-cv group">
-                          <p class="cv-text">Download CV</p>
-                          <img src="../assets/img/download-svgrepo-com.svg" alt="download icon" class="h-7 relative z-10">
-                          <span class="btn-animation group-hover:translate-x-0"></span>
-                        </button>
-                      </a>
-                  </div>
-                  <div class="block lg:hidden lg:mb-0">
-                      <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
-                        <button class="btn-primary">Hire Me</button>
-                      </a>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden lg:block mt-7">
-                      <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
-                        <button class="btn-primary">Hire Me</button>
-                      </a>
-                </div>
-            </div>
-            <div class="profile">
-              <div class="p-img-decoration-top"></div>
-              <img class="p-img" src="../assets/img/ForPOrtfolio.png" alt="profile image">
-              <div class="p-img-decoration-bottom"></div>
-            </div>
-          </div>
-        </div>
-        <app-back-to-top></app-back-to-top>
-        <!-- ================ ABOUT ME =============== -->
-        <div class="sec-pt sec-pb" id="about">
-            <div class="heading">
-              <div class="heading-text">About Me</div>
-              <div class="heading-underline-sm"></div>
-              <div class="heading-underline-lg"></div>
-            </div>
-            <!-- Description -->
-            <div class="flex flex-wrap relative mb-14">
-              <div class="text-white font-bold text-2xl mb-4">Designing with Code, <span class="text-green">Innovating with Passion</span></div>
-              <div class="text-white leading-6">{{aboutMeText}}</div>
-            </div>
-            <!-- Info & Skills -->
-            <div class="resume-title text-center mb-5">My skills</div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
-              <div>
-                <div class="skill">
-                    <p class="skill-text">JAVASCRIPT</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[66%]"></div>
-                      <div class="percent-num">66%</div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <p class="skill-text">C</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[69%]"></div>
-                      <div class="percent-num">69%</div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <p class="skill-text">C++</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[40%]"></div>
-                      <div class="percent-num">40%</div>
-                    </div>
-                  </div>
-              </div>
-              <div>
-                <div class="skill">
-                    <p class="skill-text">HTML</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[90%]"></div>
-                      <div class="percent-num">90%</div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <p class="skill-text">CSS</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[89%]"></div>
-                      <div class="percent-num">89%</div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <p class="skill-text">SCSS</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[68%]"></div>
-                      <div class="percent-num">68%</div>
-                    </div>
-                  </div>
-              </div>
-              <div>
-                <div class="skill">
-                    <p class="skill-text">ANGULAR</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[46%]"></div>
-                      <div class="percent-num">46%</div>
-                    </div>
-                  </div>
-                <div class="skill">
-                    <p class="skill-text">TAILWIND CSS</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[88%]"></div>
-                      <div class="percent-num">88%</div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <p class="skill-text">VERSION CONTROL (GIT)</p>
-                    <div class="percent-pos">
-                      <div class="percentage w-[55%]"></div>
-                      <div class="percent-num">55%</div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-8">
-                  <div class="text-white mt-[40px] flex gap-6">
-                    <a href="https://drive.google.com/file/d/1Z5WHLvwUWT6GtHRsj-rJGJl8ph6UJNCY/view?usp=sharing" target="_blank">
-                      <button class="btn-primary mb-5 md:mb-0 lg:mb-0">Download Cv</button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
-                      <button class="btn-primary">Hire Me</button>
-                    </a>
-              </div>
-            </div>
-        </div>
-        <!-- ================ ./ABOUT ME =============== -->
-
-        <!-- ================ Education & Experience =============== -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-[70px]" id="info">
-          <div>
-            <p class="resume-title">Education</p>
-            <div class="resume-card">
-              <div class="card-position">
-                <div class="card-decoration pb-8">
-                  <div class="decoration-start">
-                    <div class="decoration-end"></div>
-                  </div>
-                  <p class="resume-info-date">2022 - Present</p>
-                  <p class="info-title">B.SC. IN COMPUTER SCIENCE & ENGINEERING</p>
-                  <p class="info-subtitle">Northern University Bangladesh, Dhaka</p>
-                </div>
-                <div class="card-decoration pb-8">
-                  <div class="decoration-start">
-                    <div class="decoration-end"></div>
-                  </div>
-                  <p class="resume-info-date">2019 - 2021</p>
-                  <p class="info-title">HIGHER SECONDARY CERTIFICATE</p>
-                  <p class="info-subtitle">National Ideal College, Dhaka</p>
-                </div>
-                <div class="card-decoration">
-                  <div class="decoration-start">
-                    <div class="decoration-end"></div>
-                  </div>
-                  <p class="resume-info-date">2019</p>
-                  <p class="info-title">SECONDARY SCHOOL CERTIFICATE</p>
-                  <p class="info-subtitle">Pirojpur Govt High School, Pirojpur</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pb-[30px]">
-            <div class="resume-title">Experience</div>
-            <div class="resume-card">
-              <div class="card-position">
-                <div class="card-decoration">
-                  <div class="decoration-start">
-                    <div class="decoration-end"></div>
-                  </div>
-                  <p class="resume-info-date">2023 October - 2024 February</p>
-                  <p class="info-title">WEB DEVELOPMENT INTERN</p>
-                  <p class="info-subtitle">PulseTech Ltd.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ================ ./Education & Experience =============== -->
-
-        <!-- ================ Portfolio =============== -->
-         <div class="sec-pt sec-pb" id="portfolio">
-            <div class="heading">
-              <div class="heading-text">Portfolio</div>
-              <div class="heading-underline-sm"></div>
-              <div class="heading-underline-lg"></div>
-            </div>
-            <p class="mb-10 font-medium text-xl text-white">My Last Project : </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-10">
-              <!-- Project card -->
-              <div class="project-card group">
-                <div class="img-wrapper">
-                  <img src="../assets/img/burger.jpg" alt="" class="img group-hover:scale-95">
-                </div>
-                 <div class="content group-hover:translate-y-0">
-                    <a href="https://aminul-burger-website.vercel.app/" target="_blank">
-                      <p class="title">Visit Website</p>
-                      <div class="icon-wrapper">
-                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
-                      </div>
-                    </a>
-                </div>
-              </div>
-              <div class="project-card group">
-                <div class="img-wrapper">
-                  <img src="../assets/img/imperialfalcon.jpg" alt="" class="img group-hover:scale-95">
-                </div>
-                 <div class="content group-hover:translate-y-0">
-                    <a href="https://imperialfalcon.org/" target="_blank">
-                      <p class="title">Visit Website</p>
-                      <div class="icon-wrapper">
-                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
-                      </div>
-                    </a>
-                </div>
-              </div>
-              <div class="project-card group">
-                <div class="img-wrapper">
-                  <img src="../assets/img/bank.jpg" alt="" class="img group-hover:scale-95">
-                </div>
-                 <div class="content group-hover:translate-y-0">
-                    <a href="https://bank-mordern-web.netlify.app/" target="_blank">
-                      <p class="title">Visit Website</p>
-                      <div class="icon-wrapper">
-                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
-                      </div>
-                    </a>
-                </div>
-              </div>
-              <div class="project-card group">
-                <div class="img-wrapper">
-                  <img src="../assets/img/erp-mockup.jpg" alt="" class="img group-hover:scale-95">
-                </div>
-                 <div class="content group-hover:translate-y-0">
-                    <a href="https://erp-web-dem.netlify.app/" target="_blank">
-                      <p class="title">Visit Website</p>
-                      <div class="icon-wrapper">
-                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
-                      </div>
-                    </a>
-                </div>
-              </div>
-              <div class="project-card group">
-                <div class="img-wrapper">
-                  <img src="../assets/img/ecommerce.jpg" alt="" class="img group-hover:scale-95">
-                </div>
-                 <div class="content group-hover:translate-y-0">
-                    <a href="https://ecommerce-demo-fur.vercel.app/" target="_blank">
-                      <p class="title">Visit Website</p>
-                      <div class="icon-wrapper">
-                        <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
-                      </div>
-                    </a>
-                </div>
-              </div>
-            </div>
-         </div>
-        <!-- ================ ./Portfolio =============== -->
-
-        <!-- ================ Contact Me =============== -->
-        <div class="sec-pt sec-pb" id="contact">
-          <div class="heading">
-            <div class="heading-text">Contact Me</div>
-            <div class="heading-underline-sm"></div>
-            <div class="heading-underline-lg"></div>
-          </div>
-          <p class="contact-title">Have You Any Question ?</p>
-          <p class="contact-subtitle">I'M AT YOUR SERVICES</p>
-          <div class="flex items-center justify-center mb-10">
-            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-5/6">
-              <div>
-                <a href="tel:+8801826051709" class="contact">
-                  <div>
-                    <div class="contact-icon">
-                      <img src="../assets/img/call-189-svgrepo-com.svg" class="icon-svg" alt="call icon">
-                    </div>
-                    <p class="icon-title">Call Me On</p>
-                    <p class="icon-content">+88 01826051709</p>
-                  </div>
+            <div class="lg:flex gap-5">
+              <div class="flex gap-5 mb-10 lg:mb-0">
+                <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank">
+                  <img src="../assets/img/facebook-color-svgrepo-com.svg" class="h-9" alt="facebook icon">
+                </a>
+                <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
+                  <img src="../assets/img/linkedin-svgrepo-com.svg" class="h-9" alt="linkedin icon">
+                </a>
+                <a href="https://wa.me/qr/KRF66QMKXYJ5J1" target="_blank">
+                  <img src="../assets/img/whatsapp-svgrepo-com.svg" class="h-9" alt="whatsapp icon">
+                </a>
+                <a href="https://github.com/aminul-cse" target="_blank">
+                  <img src="../assets/img/github-svgrepo-com.svg" class="h-10" alt="github icon">
                 </a>
               </div>
-              <a href="#" class="contact">
+              <div class="lg:block flex items-center justify-center gap-6 mb-10 lg:mb-0">
                 <div>
-                  <div class="contact-icon">
-                    <img src="../assets/img/location-filled-svgrepo-com.svg" class="icon-svg" alt="location icon">
-                  </div>
-                  <p class="icon-title">Location</p>
-                  <p class="icon-content">Dhaka, Bangladesh</p>
+                  <a href="https://drive.google.com/file/d/1Z5WHLvwUWT6GtHRsj-rJGJl8ph6UJNCY/view?usp=sharing"
+                    target="_blank">
+                    <button class="download-cv group">
+                      <p class="cv-text">Download CV</p>
+                      <img src="../assets/img/download-svgrepo-com.svg" alt="download icon" class="h-7 relative z-10">
+                      <span class="btn-animation group-hover:translate-x-0"></span>
+                    </button>
+                  </a>
                 </div>
-              </a>
-              <a href="mailto:aminulcse2023@gmail.com" class="contact">
-                <div>
-                  <div class="contact-icon">
-                    <img src="../assets/img/mail-filled-svgrepo-com.svg" class="icon-svg" alt="mail icon">
-                  </div>
-                  <p class="icon-title">Email</p>
-                  <p>aminulcse2023&#64;gmail.com</p>
+                <div class="block lg:hidden lg:mb-0">
+                  <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
+                    <button class="btn-primary">Hire Me</button>
+                  </a>
                 </div>
+              </div>
+            </div>
+            <div class="hidden lg:block mt-7">
+              <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
+                <button class="btn-primary">Hire Me</button>
               </a>
             </div>
           </div>
-          <app-send-email></app-send-email>
-          <div>
-            <p class="contact-title">Let's Chat</p>
-            <p class="contact-subtitle">I'M VERY RESPONSIVE TO MESSAGES</p>
-            <div class="flex items-center justify-center">
-              <div class="grid grid-cols-4 w-4/5 md:w-2/6 lg:w-2/6">
-                  <div class="social-media">
-                    <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank">
-                        <img src="../assets/img/facebook-color-svgrepo-com.svg" class="h-8" alt="facebook icon">
-                    </a>
-                  </div>
-                  <div class="social-media">
-                    <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
-                        <img src="../assets/img/linkedin-svgrepo-com.svg" class="h-8" alt="linkedin icon">
-                    </a>
-                  </div>
-                  <div class="social-media">
-                    <a href="https://github.com/aminul-cse" target="_blank">
-                      <img src="../assets/img/github-svgrepo-com.svg" class="svg" alt="github icon">
-                    </a>
-                  </div>
-                  <div class="social-media">
-                    <a href="https://wa.me/qr/KRF66QMKXYJ5J1" target="_blank">
-                        <img src="../assets/img/whatsapp-svgrepo-com.svg" class="svg" alt="whatsapp icon">
-                    </a>
-                  </div>
+          <div class="profile">
+            <div class="p-img-decoration-top"></div>
+            <img class="p-img" src="../assets/img/ForPOrtfolio.png" alt="profile image">
+            <div class="p-img-decoration-bottom"></div>
+          </div>
+        </div>
+      </div>
+      <app-back-to-top></app-back-to-top>
+      <!-- ================ ABOUT ME =============== -->
+      <div class="sec-pt" id="about">
+        <div class="heading">
+          <div class="heading-text">About Me</div>
+          <div class="heading-underline-sm"></div>
+          <div class="heading-underline-lg"></div>
+        </div>
+        <!-- Description -->
+        <div class="flex flex-wrap relative mb-14">
+          <div class="text-white text-lg">{{aboutMeText}}</div>
+        </div>
+      </div>
+      <!-- ================ ./ABOUT ME =============== -->
+
+      <!-- ================ Education & Experience =============== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-[70px]" id="info">
+        <div>
+          <p class="resume-title">Education</p>
+          <div class="resume-card">
+            <div class="card-position">
+              <div class="card-decoration pb-8">
+                <div class="decoration-start">
+                  <div class="decoration-end"></div>
+                </div>
+                <p class="resume-info-date">2022 - Present</p>
+                <p class="info-title">B.SC. IN COMPUTER SCIENCE & ENGINEERING</p>
+                <p class="info-subtitle">Northern University Bangladesh, Dhaka</p>
+              </div>
+              <div class="card-decoration pb-8">
+                <div class="decoration-start">
+                  <div class="decoration-end"></div>
+                </div>
+                <p class="resume-info-date">2019 - 2021</p>
+                <p class="info-title">HIGHER SECONDARY CERTIFICATE</p>
+                <p class="info-subtitle">National Ideal College, Dhaka</p>
+              </div>
+              <div class="card-decoration">
+                <div class="decoration-start">
+                  <div class="decoration-end"></div>
+                </div>
+                <p class="resume-info-date">2019</p>
+                <p class="info-title">SECONDARY SCHOOL CERTIFICATE</p>
+                <p class="info-subtitle">Pirojpur Govt High School, Pirojpur</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- ================ ./Contact Me =============== -->
+        <div class="pb-[30px]">
+          <div class="resume-title">Experience</div>
+          <div class="resume-card">
+            <div class="card-position">
+              <div class="card-decoration pb-8">
+                <div class="decoration-start">
+                  <div class="decoration-end"></div>
+                </div>
+                <p class="resume-info-date">2024 December - Present</p>
+                <p class="info-title">SHOPIFY DEVELOPER</p>
+                <p class="info-subtitle">A.M. London Fashion Ltd</p>
+              </div>
+              <div class="card-decoration">
+                <div class="decoration-start">
+                  <div class="decoration-end"></div>
+                </div>
+                <p class="resume-info-date">2023 October - 2024 February</p>
+                <p class="info-title">FRONTEND DEVELOPER INTERN</p>
+                <p class="info-subtitle">PulseTech Ltd.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- ================ ./Education & Experience =============== -->
+
+
+      <!-- Info & Skills -->
+      <div class="sec-pt sec-pb" id="skill">
+        <div class="heading">
+          <div class="heading-text">My Skills</div>
+          <div class="heading-underline-sm"></div>
+          <div class="heading-underline-lg"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-4">
+          <div>
+            <div class="skill-card">
+              <div class="skill-img-pos">
+                <img src="../assets/img/javascript-svgrepo-com.svg" alt="skill icon" class="w-16">
+              </div>
+              <p class="skill-title">JavaScript</p>
+            </div>
+            <div class="pt-4">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/icons8-c-programming.svg" alt="skill icon" class="w-16">
+                </div>
+                <p class="skill-title">C</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="pt-4 lg:pt-0">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/html-5-logo-svgrepo-com.svg" alt="skill icon" class="w-16">
+                </div>
+                <p class="skill-title">HTML</p>
+              </div>
+            </div>
+            <div class="pt-4">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/css3-svgrepo-com.svg" alt="skill icon" class="w-16">
+                </div>
+                <p class="skill-title">CSS</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="pt-4 lg:pt-0">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+                    alt="skill icon" class="w-[110px]">
+                </div>
+                <p class="skill-title">Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="pt-4">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/scss2-svgrepo-com.svg" alt="skill icon" class="w-16">
+                </div>
+                <p class="skill-title">SCSS</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="pt-4 lg:pt-0">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/Shopify+Liquid+Programming+Framework+Logo-640w.png" alt="skill icon"
+                    class="w-16">
+                </div>
+                <p class="skill-title">Liquid</p>
+              </div>
+            </div>
+            <div class="pt-4">
+              <div class="skill-card">
+                <div class="skill-img-pos">
+                  <img src="../assets/img/icon_angular_gradient_alt01.png" alt="skill icon" class="w-16">
+                </div>
+                <p class="skill-title">Angular</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-8">
+        <div class="text-white mt-[40px] flex gap-6">
+          <a href="https://drive.google.com/file/d/1Z5WHLvwUWT6GtHRsj-rJGJl8ph6UJNCY/view?usp=sharing" target="_blank">
+            <button class="btn-primary mb-5 md:mb-0 lg:mb-0">Download Cv</button>
+          </a>
+          <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
+            <button class="btn-primary">Hire Me</button>
+          </a>
+        </div>
+      </div>
+      <!-- ./Info & Skills -->
+      <!-- ================ Portfolio =============== -->
+      <div class="sec-pt sec-pb" id="portfolio">
+        <div class="heading">
+          <div class="heading-text">Portfolio</div>
+          <div class="heading-underline-sm"></div>
+          <div class="heading-underline-lg"></div>
+        </div>
+        <p class="mb-10 font-medium text-xl text-white">My Last Project : </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-10">
+          <!-- Project card -->
+          <div class="project-card group">
+            <div class="img-wrapper">
+              <img src="../assets/img/burger.jpg" alt="" class="img group-hover:scale-95">
+            </div>
+            <div class="content group-hover:translate-y-0">
+              <a href="https://aminul-burger-website.vercel.app/" target="_blank">
+                <p class="title">Visit Website</p>
+                <div class="icon-wrapper">
+                  <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="project-card group">
+            <div class="img-wrapper">
+              <img src="../assets/img/imperialfalcon.jpg" alt="" class="img group-hover:scale-95">
+            </div>
+            <div class="content group-hover:translate-y-0">
+              <a href="https://imperialfalcon.org/" target="_blank">
+                <p class="title">Visit Website</p>
+                <div class="icon-wrapper">
+                  <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="project-card group">
+            <div class="img-wrapper">
+              <img src="../assets/img/bank.jpg" alt="" class="img group-hover:scale-95">
+            </div>
+            <div class="content group-hover:translate-y-0">
+              <a href="https://bank-mordern-web.netlify.app/" target="_blank">
+                <p class="title">Visit Website</p>
+                <div class="icon-wrapper">
+                  <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="project-card group">
+            <div class="img-wrapper">
+              <img src="../assets/img/erp-mockup.jpg" alt="" class="img group-hover:scale-95">
+            </div>
+            <div class="content group-hover:translate-y-0">
+              <a href="https://erp-web-dem.netlify.app/" target="_blank">
+                <p class="title">Visit Website</p>
+                <div class="icon-wrapper">
+                  <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="project-card group">
+            <div class="img-wrapper">
+              <img src="../assets/img/ecommerce.jpg" alt="" class="img group-hover:scale-95">
+            </div>
+            <div class="content group-hover:translate-y-0">
+              <a href="https://ecommerce-demo-fur.vercel.app/" target="_blank">
+                <p class="title">Visit Website</p>
+                <div class="icon-wrapper">
+                  <img src="../assets/img/link-alt-1-svgrepo-com.svg" class="icon" alt="visit icon">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ================ ./Portfolio =============== -->
+
+      <!-- ================ Contact Me =============== -->
+      <div class="sec-pt sec-pb" id="contact">
+        <div class="heading">
+          <div class="heading-text">Contact Me</div>
+          <div class="heading-underline-sm"></div>
+          <div class="heading-underline-lg"></div>
+        </div>
+        <p class="contact-title">Have You Any Question ?</p>
+        <p class="contact-subtitle">I'M AT YOUR SERVICES</p>
+        <div class="flex items-center justify-center mb-10">
+          <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-5/6">
+            <div>
+              <a href="tel:+8801826051709" class="contact">
+                <div>
+                  <div class="contact-icon">
+                    <img src="../assets/img/call-189-svgrepo-com.svg" class="icon-svg" alt="call icon">
+                  </div>
+                  <p class="icon-title">Call Me On</p>
+                  <p class="icon-content">+88 01826051709</p>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="contact">
+              <div>
+                <div class="contact-icon">
+                  <img src="../assets/img/location-filled-svgrepo-com.svg" class="icon-svg" alt="location icon">
+                </div>
+                <p class="icon-title">Location</p>
+                <p class="icon-content">Dhaka, Bangladesh</p>
+              </div>
+            </a>
+            <a href="mailto:aminulcse2023@gmail.com" class="contact">
+              <div>
+                <div class="contact-icon">
+                  <img src="../assets/img/mail-filled-svgrepo-com.svg" class="icon-svg" alt="mail icon">
+                </div>
+                <p class="icon-title">Email</p>
+                <p>aminulcse2023&#64;gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <app-send-email></app-send-email>
+        <div>
+          <p class="contact-title">Let's Chat</p>
+          <p class="contact-subtitle">I'M VERY RESPONSIVE TO MESSAGES</p>
+          <div class="flex items-center justify-center">
+            <div class="grid grid-cols-4 w-4/5 md:w-2/6 lg:w-2/6">
+              <div class="social-media">
+                <a href="https://www.facebook.com/aminulislam2002?mibextid=ZbWKwL" target="_blank">
+                  <img src="../assets/img/facebook-color-svgrepo-com.svg" class="h-8" alt="facebook icon">
+                </a>
+              </div>
+              <div class="social-media">
+                <a href="https://www.linkedin.com/in/aminul-islam-aa55b8292/" target="_blank">
+                  <img src="../assets/img/linkedin-svgrepo-com.svg" class="h-8" alt="linkedin icon">
+                </a>
+              </div>
+              <div class="social-media">
+                <a href="https://github.com/aminul-cse" target="_blank">
+                  <img src="../assets/img/github-svgrepo-com.svg" class="svg" alt="github icon">
+                </a>
+              </div>
+              <div class="social-media">
+                <a href="https://wa.me/qr/KRF66QMKXYJ5J1" target="_blank">
+                  <img src="../assets/img/whatsapp-svgrepo-com.svg" class="svg" alt="whatsapp icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ================ ./Contact Me =============== -->
     </div>
-    <!-- ================ ./Home section =============== -->
+  </div>
+  <!-- ================ ./Home section =============== -->
 
 </section>
