@@ -120,12 +120,15 @@
 // ...skill section
 
 .skill-card {
-        @apply w-full bg-[#151515] transition duration-300 ease-in-out hover:bg-[#101010] shadow-black shadow-2xl border-none rounded-md;
+        @apply w-full h-48 md:w-64 md:h-64 lg:w-64 lg:h-64 flex flex-wrap items-center justify-center bg-[#151515] transition duration-300 ease-in-out hover:bg-[#101010] shadow-black shadow-2xl border-none rounded-md;
         .skill-img-pos {
-            @apply flex items-center justify-center p-8;
-        }
-        .skill-title {
-            @apply text-center text-gray-200 font-medium text-xl pb-3 transition duration-300 ease-in-out hover:text-[#37b182];
+            @apply w-16 h-16 lg:w-20 lg:h-20;
+            .img-wrapper {
+                @apply w-full h-full object-contain;
+            }
+            .skill-title {
+                @apply text-center text-gray-200 font-medium text-lg lg:text-xl pt-3 transition duration-300 ease-in-out hover:text-[#37b182];
+            }
         }
     }
 
